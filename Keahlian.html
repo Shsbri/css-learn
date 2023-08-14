@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+.header {
+    background-color: #eee;
+    min-height: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.logo img {
+    width: 200px;
+}
+.menu ul {
+    padding: 0;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.menu ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ul.submenu{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: none;
+}
+ul.submenu li {
+    display: block;
+}
+ul.submenu li a {
+    display: block;
+    padding: 5px 10px;
+}
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+.menu ul li:hover ul.submenu {
+display: block;
+}
+.skill {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    padding: 0;margin: 0;
+}
+body .skill{
+    background: #333;
+    text-transform: uppercase;
+}
+.skill h1{
+    text-align: center;
+}
+.skill h3 {
+    margin: 5px;
+}
+.skill {
+    width: 500px; margin: 60px auto; color: #fff; padding: 20px; box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.skill li {
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px; border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.bar:hover {
+    box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left; background: linear-gradient(135deg, rgba(236, 0,140,1)0%, rgba(252,103,103,1)100%);
+}
+.html{
+    width: 80%; animation: html 3s;
+}
+.css {
+    width: 60%; animation: css 3s;
+}
+.php {
+    width: 10%; animation: php 3s;
+}
+.javascript{
+    width: 5%; animation: javascrip 3s;
+}
+@keyframes html{
+    0%{width:0%;} 100%{width:80%}
+}
+@keyframes css{
+    0%{width:0%;} 100%{width:60%}
+}
+@keyframes php{
+    0%{width:0%;} 100%{width:10%}
+}
+@keyframes javascript{
+    0%{width:0%;} 100%{width:5%}
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="header">
+            <!-- <h1>Logo SMK</h1> -->
+            <div class="logo">
+            <img src="https://smkmuh1-skh.sch.id/wp-content/uploads/2020/12/Logo-smkmutuharjo-web-544.png" alt="">
+        </div>
+            <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>        
+                <ul class="submenu">
+                    <li><a href="#">Keahlian</a></li>
+                    <li><a href="tmndkt.html">Teman Dekat</a></li>
+                    <li><a href="port.html">Portofolio</a></li>
+                 </ul> </li>
+        
+        
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Keahlian -->
+<div class="skill">
+    <h1>my skill</h1>
+
+    <li><h3>html</h3>
+    <span class="bar"><span class="html"></span></span></li>
+    <li><h3>css</h3>
+    <span class="bar"><span class="css"></span></span></li>
+    <li><h3>php</h3><span class="bar"><span class="php"></span></span></li>
+    <li><h3>javascript</h3><span class="bar"><span class="javascript"></span></span></li>
+    
+</div>
+<div class="footer">
+    <p>copyright 2023| SMK Muhammadiyah 1 Sukoharjo</p>
+</div>
+</div>
+</body>
+</html>
